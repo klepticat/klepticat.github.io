@@ -88,12 +88,20 @@ h1 {
     animation-fill-mode: forwards;
 }
 #about > p {
+    line-height: 1.6;
     width: 50%;
     margin: 5px;
     word-wrap: normal;
 }
+#back_container {
+    display: flex;
+    align-items: middle;
+    height: 3vh;
+}
 #back {
     transition: text-shadow .2s, transform .1s;
+    height: 1.5vh;
+    width: 5vw;
 }
 #back:hover {
     text-shadow: 0px 0px 5px white;
