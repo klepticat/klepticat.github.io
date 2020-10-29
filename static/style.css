@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:wght@500&display=swap');
+
+:root {
+    font-size: 100%;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+body {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* LOGO PAGE */
+#logo {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    font-size: 400%;
+    font-family: 'Major Mono Display', monospace;
+    justify-content: center;
+    align-items: center;
+    transition: font-size 1s;
+}
+#logo_text {
+    transition: transform 1s;
+}
+#logo_text:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+#logo_text:focus {
+    transform: scale(20);
+    cursor: pointer;
+}
+
+/* NAVIGATION */
+#nav_container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    font-size: 400%;
+    justify-content: center;
+    align-items: center;
+    transition: font-size 1s;
+    font-family: 'Major Mono Display', monospace;
+}
+.nav_item {
+    opacity: 0;
+    animation: fadeIn 0.7s 1;
+    animation-fill-mode: forwards;
+    list-style: none;
+    transition: text-shadow .2s, transform .1s;
+}
+.nav_item:hover {
+    text-shadow: 0px 0px 15px white;
+    cursor: pointer;
+    transform: translateX(3%);
+}
+.nav_item:nth-child(5n+1) {
+    animation-delay: .4s;
+}
+.nav_item:nth-child(5n+2) {
+    animation-delay: .8s;
+}
+.nav_item:nth-child(5n+3) {
+    animation-delay: 1.2s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}

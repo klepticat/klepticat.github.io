@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KleptiCat/</title>
+        <link rel="stylesheet" href="style.css"/>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="nav_container">
+            <ul id="nav_list">
+                <li class="nav_item" onclick="navClick(this)">About</li>
+                <li class="nav_item">Projects</li>
+                <li class="nav_item">feed</li>
+            </ul>
+        </div>
+        <script>
+            function navClick(element) {
+                element.parentElement.style.transition = "opacity .5s";
+                element.parentElement.style.opacity = "0%";
+                setTimeout(() => {window.location.href=`./${element.textContent.toLowerCase()}.html`;}, 300)
+            }
+        </script>
+    </body>
+</html>

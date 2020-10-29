@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href='style.css'/>
+        <title>KleptiCat/</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="logo"><p id="logo_text" onclick="logoClick()">KlePtiCAt/</p></div>
+        <script>
+            function logoClick() {
+                document.getElementById("logo_text").style.transform = "scale(50)";
+                setTimeout(() => {window.location.href='./navigation.html';}, 750)
+            }
+        </script>
+    </body>
+</html>
