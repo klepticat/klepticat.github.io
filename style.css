@@ -13,6 +13,17 @@ body {
     margin: 0px;
     padding: 0px;
 }
+h1 {
+    font-family: 'Major Mono Display', monospace;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
 
 /* LOGO PAGE */
 #logo {
@@ -69,11 +80,23 @@ body {
 .nav_item:nth-child(5n+3) {
     animation-delay: 1.2s;
 }
-@keyframes fadeIn {
-    0% {
-        opacity: 0.0;
-    }
-    100% {
-        opacity: 1.0;
-    }
+
+/* ABOUT PAGE */
+#about {
+    padding: 3%;
+    animation: fadeIn 0.7s 1;
+    animation-fill-mode: forwards;
+}
+#about > p {
+    width: 50%;
+    margin: 5px;
+    word-wrap: normal;
+}
+#back {
+    transition: text-shadow .2s, transform .1s;
+}
+#back:hover {
+    text-shadow: 0px 0px 5px white;
+    cursor: pointer;
+    transform: translateX(1%);
 }

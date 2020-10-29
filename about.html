@@ -5,6 +5,23 @@
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-        <div id='about'><p>!! THIS WEBSITE IS EXPERIMENTAL AND MAY NOT WORK CORRECTLY !!</p></div>
+        <div id='about'>
+            <p id="back" onclick="back(this)">&#60&#60 back</p>
+            <h1>about me</h1>
+            <p>Hello!! I'm Cat, and this is my cool awesome website where I put cool things. I have little to no idea what I'm doing, but I'm doing it anyways, because that's how I do shit around here. I mostly write in JavaScript, HTML, and CSS, but I sometimes dabble in Python.</p>
+            
+            <h1>about this</h1>
+            <p>Any projects that I feel like showing to people will go in the projects page (The projects that I dont feel like showing people stay on my hard drive, of course). The feed page will probably eventually be set up to contain a Twitter, YouTube, and GitHub Commit feed once I figure out how the fuck I am going to do that. Keep in mind that this website is brand new and I'm still trying to learn a bit more HTML/CSS, so it barely works. I'll try to update this pretty often as a project for a while before moving onto other stuff, so the projects page will be pretty empty for now. That is, if I can somehow keep the motivation to keep working on this.</p>
+        </div>
+        <script>
+            function back(element) {
+                let children = element.parentNode.children
+                for(i of children) {
+                    i.style.transition = "opacity .5s";
+                    i.style.opacity = "0%";
+                }
+                setTimeout(() => {window.location.href=`./navigation.html`;}, 300)
+            }
+        </script>
     </body>
 </html>
