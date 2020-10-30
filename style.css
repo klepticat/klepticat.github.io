@@ -86,30 +86,33 @@ h1 {
     animation-delay: 1.6s;
 }
 
-/* ABOUT PAGE */
-#about {
+/* ABOUT/PROJECTS PAGE */
+.main {
     padding: 3%;
     animation: fadeIn 0.7s 1;
     animation-fill-mode: forwards;
 }
-#about > p {
+.main > p {
     line-height: 1.6;
     width: 50%;
     margin: 5px;
     word-wrap: normal;
 }
-#back_container {
+.back_container {
     display: flex;
     align-items: middle;
     height: 3vh;
 }
-#back {
+.back {
     transition: text-shadow .2s, transform .1s;
     height: 1.5vh;
     width: 5vw;
 }
-#back:hover {
+.back:hover {
     text-shadow: 0px 0px 5px white;
     cursor: pointer;
     transform: translateX(1%);
+}
+#github {
+    cursor: pointer;
 }

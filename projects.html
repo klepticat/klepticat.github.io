@@ -3,8 +3,23 @@
     <head>
         <title>KleptiCat/Projects</title>
         <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script src="https://kit.fontawesome.com/9f99ec2ed5.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        WIP - coming soon
+        <div class='main'>
+            <div class="back_container"><p class="back" onclick="back(this)">&#60&#60 back</p></div>
+            <h1>github</h1>
+            <p><i id="github" class="fab fa-github fa-4x" onclick="window.location.href=`https://github.com/klepticat`;"></i></p>
+        </div>
+        <script>
+            function back(element) {
+                let children = element.parentNode.parentNode.children
+                for(i of children) {
+                    i.style.transition = "opacity .5s";
+                    i.style.opacity = "0%";
+                }
+                setTimeout(() => {window.location.href=`./navigation.html`;}, 300)
+            }
+        </script>
     </body>
 </html>
