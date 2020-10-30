@@ -35,6 +35,8 @@ h1 {
     justify-content: center;
     align-items: center;
     transition: font-size 1s;
+    animation: fadeIn 0.7s 1;
+    animation-fill-mode: forwards;
 }
 #logo_text {
     transition: transform 1s;
@@ -79,6 +81,9 @@ h1 {
 }
 .nav_item:nth-child(5n+3) {
     animation-delay: 1.2s;
+}
+.nav_item:nth-child(5n+4) {
+    animation-delay: 1.6s;
 }
 
 /* ABOUT PAGE */
